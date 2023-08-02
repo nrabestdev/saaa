@@ -51,7 +51,7 @@ function App() {
     } else if (!type) {
       toast.error("Chọn loại gửi!");
     } else if (!value) {
-      toast.error("Nhập số lượng bội của 10!");
+      toast.error("Nhập số lượng,bội của 10!");
     } else if (!ID) {
       toast.error("Nhập ID gửi!");
     } else {
@@ -132,14 +132,14 @@ function App() {
         <CssBaseline />
         <Container component="main" sx={{ mt: 8, mb: 2 }} maxWidth="sm">
           <Typography variant="h3" component="h1" gutterBottom>
-           Mailbox Send AOV By TuanNoodDev
+           Mailbox Send AOV 
           </Typography>
           <Typography variant="h5" component="h2" gutterBottom></Typography>
           <Typography variant="body1">
             <FormControl fullWidth>
               <InputLabel>Type</InputLabel>
               <Select
-                label="Type"
+                label="Loại"
                 onChange={(e) => {
                   setType(e.target.value);
                   setValue("");
@@ -228,9 +228,7 @@ function App() {
           <Container maxWidth="sm">
             <Typography variant="body1">Tính năng chưa ra mắt</Typography>
             <Typography variant="body2">Số lượng luôn là bội của 10</Typography>
-            <Typography variant="body3">Tướng code là thứ tự tướng ra đời </Typography>
-            <Typography variant="body4">không thoát trang trong lúc gửi vì có thể làm sai số lượng</Typography>
-            <Typography variant="body5" color="text.secondary">
+            <Typography variant="body3" color="text.secondary">
               {"Copyright © "}
               <Link
                 color="inherit"
